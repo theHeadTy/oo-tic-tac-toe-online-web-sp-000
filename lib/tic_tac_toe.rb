@@ -38,6 +38,8 @@ class TicTacToe
     (board[index] == 'X' or board[index] == 'O') ? true : false
   end
   
+  def valid_move?()
+  
   
   def play
   end
