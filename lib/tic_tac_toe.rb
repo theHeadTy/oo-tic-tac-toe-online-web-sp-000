@@ -35,10 +35,11 @@ class TicTacToe
   end
   
   def position_taken?(index)
-    if board[index] == 'X' or board[index] == 'O'
-      return true
-    end
-    false
+    return (board[index] == 'X' or board[index] == 'O') ? true : false
+    #if board[index] == 'X' or board[index] == 'O'
+    #  return true
+    #end
+    #false
   end
   
   
