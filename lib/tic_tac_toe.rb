@@ -65,6 +65,21 @@ class TicTacToe
     display_board
   end
   
+  def won?
+    x_arr = []
+    o_arr = []
+    board.select.with_index do |val, idx|
+      if val == 'X'
+        x_arr << idx
+      elsif val == 'O'
+        o_arr << idx
+      end
+    end
+    
+    combos = WIN_COMBINATIONS
+    combos.map do |combo|
+      
+  
   def play
   end
   
