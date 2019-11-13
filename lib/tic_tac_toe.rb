@@ -100,7 +100,7 @@ class TicTacToe
   end
   
   def winner
-    self.who_won
+    return @who_won.to_s
   end
   
   def play
