@@ -98,7 +98,7 @@ class TicTacToe
   def winner
     won?
     
-    puts @who_won
+    return @who_won
   end
   
   def play
