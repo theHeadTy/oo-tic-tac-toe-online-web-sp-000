@@ -95,6 +95,10 @@ class TicTacToe
     won? or draw? ? true : false
   end
   
+  def winner
+    @winner
+  end
+  
   def play
   end
   
