@@ -30,6 +30,10 @@ class TicTacToe
     input.to_i - 1
   end
   
+  def move(index, turn)
+    @board[index] = turn
+  end
+  
   
   def play
   end
