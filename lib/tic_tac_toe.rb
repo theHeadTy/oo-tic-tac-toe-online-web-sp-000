@@ -66,19 +66,15 @@ class TicTacToe
   end
   
   def won?
-    x_arr = []
-    o_arr = []
-    board.select.with_index do |val, idx|
-      if val == 'X'
-        x_arr << idx
-      elsif val == 'O'
-        o_arr << idx
-      end
-    end
+    x_arr = board.each_index.select { |x| board[x] == 'X' }
+    o_arr = board.each_index.select { |o| board[o] == 'O' }
     
     combos = WIN_COMBINATIONS
     combos.map do |combo|
-      
+      if (combo & x_arr).length == 3
+        return combo
+      elsif (combo & o_arr).length == 3
+        return combo
   
   def play
   end
