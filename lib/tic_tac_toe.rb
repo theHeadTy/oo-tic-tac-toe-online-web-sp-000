@@ -105,7 +105,10 @@ class TicTacToe
       turn
     end
     
-    
+    if draw?
+      puts "Cat\s Game!"
+    else
+      puts "Congratulations "
   end
   
 end
