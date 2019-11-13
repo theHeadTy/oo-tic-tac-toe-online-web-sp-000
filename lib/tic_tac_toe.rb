@@ -76,6 +76,8 @@ class TicTacToe
       elsif (combo & o_arr).length == 3
         return combo
       end
+    end
+  end
   
   def play
   end
