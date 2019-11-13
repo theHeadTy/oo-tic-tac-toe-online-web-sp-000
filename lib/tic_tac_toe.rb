@@ -90,6 +90,7 @@ class TicTacToe
   
   def over?
     won? or draw? ? true : false
+  end
   
   def play
   end
