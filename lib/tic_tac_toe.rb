@@ -10,7 +10,7 @@ class TicTacToe
     [6, 4, 2]
   ]
 
-  attr_accessor :board
+  attr_accessor :board :winner
 
   def initialize
     @board = Array.new(9, " ")
