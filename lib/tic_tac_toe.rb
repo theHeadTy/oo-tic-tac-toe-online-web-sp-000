@@ -33,6 +33,7 @@ class TicTacToe
       -----------
        #{board[6]} | #{board[7]} | #{board[8]}
     HEREDOC
+  end
   
   def play
   end
