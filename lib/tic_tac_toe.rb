@@ -50,6 +50,9 @@ class TicTacToe
     board.count { |b| b != " " }
   end
   
+  def current_player
+    
+  
   def play
   end
   
