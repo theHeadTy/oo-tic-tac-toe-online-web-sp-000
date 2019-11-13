@@ -77,6 +77,7 @@ class TicTacToe
         return combo
       end
     end
+    false
   end
   
   def full?
