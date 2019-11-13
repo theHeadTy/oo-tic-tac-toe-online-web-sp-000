@@ -34,6 +34,10 @@ class TicTacToe
     @board[index] = turn
   end
   
+  def position_taken?(index)
+    return board[index] == " " ? true : false
+  end
+  
   
   def play
   end
