@@ -73,10 +73,8 @@ class TicTacToe
     combos = WIN_COMBINATIONS
     combos.map do |combo|
       if (combo & x_arr).length == 3
-        WHO_WON = 'X'
         return combo
       elsif (combo & o_arr).length == 3
-        WHO_WON = 'O'
         return combo
       end
     end
