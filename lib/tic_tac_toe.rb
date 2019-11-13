@@ -54,6 +54,11 @@ class TicTacToe
     turn_count.even? ? 'X' : 'O'
   end
   
+  def turn
+    input = gets.strip
+    
+  end
+  
   def play
   end
   
