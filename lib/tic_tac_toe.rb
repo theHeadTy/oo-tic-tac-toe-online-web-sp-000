@@ -83,6 +83,9 @@ class TicTacToe
     board.all? { |b| b == 'X' or b == 'O' }
   end
   
+  def draw?
+    !won? && full?
+  
   def play
   end
   
