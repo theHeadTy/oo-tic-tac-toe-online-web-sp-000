@@ -97,7 +97,6 @@ class TicTacToe
   
   def winner
     won?
-    
     return @who_won
   end
   
