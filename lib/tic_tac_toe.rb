@@ -9,16 +9,14 @@ class TicTacToe
     [0, 4, 8],
     [6, 4, 2]
   ]
+  
+  WHO_WON = nil
 
   attr_accessor :board, :who_won
   
   def initialize
     @board = Array.new(9, " ")
     @who_won = nil
-  end
-  
-  def who_won
-    @who_won
   end
   
   def display_board
@@ -77,10 +75,10 @@ class TicTacToe
     combos = WIN_COMBINATIONS
     combos.map do |combo|
       if (combo & x_arr).length == 3
-        @who_won = 'X'
+        WHO_WON = 'X'
         return combo
       elsif (combo & o_arr).length == 3
-        @who_won = 'O'
+        WHO_WON = 'O'
         return combo
       end
     end
@@ -100,7 +98,7 @@ class TicTacToe
   end
   
   def winner
-    puts who_won
+    puts WHO_WON
   end
   
   def play
